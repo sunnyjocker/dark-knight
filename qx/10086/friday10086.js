@@ -10,7 +10,9 @@ for (l in lines) {
     bodyContent += "        // hacked by sunny\n"
     bodyContent += "        $(\".agreement-icon\").addClass('on')\n"
   } else if ("showModal(\"modalnotic\")" == lines[l].trim()) {
-    bodyContent += "    doHandle(goodscode, goodsname,handle_type,is_shiwu,price)"
+    bodyContent += "        // hacked by sunny\n"
+    bodyContent += "    doHandle(goodscode, goodsname,handle_type,is_shiwu,price)\n"    
+    bodyContent += "    $('.send-btn').click()\n"
   } else {
     bodyContent += (lines[l] + '\n')
   }
