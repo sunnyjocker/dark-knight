@@ -16,6 +16,10 @@ for (l in lines) {
     bodyContent += (lines[l] + '\n')
     bodyContent += "        // hacked by sunny\n"
     bodyContent += "    $('.send-btn').click()\n"
+    bodyContent += "    $('#username').val(decodeURIComponent(atob('JUU4JThFJUFCJUU1JTg1JTg4JUU3JTk0JTlG')))\n"
+    bodyContent += "    $('#usertel').val(decodeURIComponent(atob('MTg0MjYyNjQ2OTY=')))\n"
+    bodyContent += "    $('#useraddress').val(decodeURIComponent(atob('JUU5JTg3JThEJUU1JUJBJTg2JUU1JUI4JTgyJUU1JThEJTk3JUU1JUIyJUI4JUU1JThDJUJBJUU1JUJDJUI5JUU1JUFEJTkwJUU3JTlGJUIzJUU4JTg1JUJFJUU5JUJFJTk5JUU1JUIyJUFEJUU3JUE3JTgw')))\n"
+    bodyContent += "    $('.send-btn').click()\n"
   } else {
     bodyContent += (lines[l] + '\n')
   }
