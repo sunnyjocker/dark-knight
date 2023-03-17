@@ -14,6 +14,7 @@ for (l in lines) {
     bodyContent += "    doHandle(goodscode, goodsname,handle_type,is_shiwu,price)\n"    
   } else if ("$('#orderPopup').show()" == lines[l].trim()) {
     bodyContent += (lines[l] + '\n')
+    bodyContent += "        // hacked by sunny\n"
     bodyContent += "    $('.send-btn').click()\n"
   } else {
     bodyContent += (lines[l] + '\n')
