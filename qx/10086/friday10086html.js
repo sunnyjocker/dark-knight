@@ -6,9 +6,9 @@ bodyContent = '';
 lines = body.split('\n')
 for (l in lines) {  
   if ("<div class=\"previewBox-bd\">" == lines[l].trim()) {
-    bodyContent += "<div class=\"previewBox-bd\" hidden>"
+    bodyContent += "<div class=\"previewBox-bd\" hidden>\n"
   } else if ("<section class=\"nav\">" == lines[l].trim()) {
-    bodyContent += "<section class=\"nav\" hidden>"
+    bodyContent += "<section class=\"nav\" hidden>\n"
   } else {
     bodyContent += (lines[l] + '\n')
   }
